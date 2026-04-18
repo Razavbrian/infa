@@ -1,0 +1,3 @@
+module.exports=[18788,a=>{"use strict";var b=a.i(22898),c=a.i(59073);function d(){return(0,b.jsx)("div",{className:"min-h-screen flex items-center justify-center bg-infa-fond px-4",children:(0,b.jsxs)("div",{className:"text-center max-w-md",children:[(0,b.jsx)("h1",{className:"text-6xl font-bold text-infa-vert mb-4",children:"404"}),(0,b.jsx)("h2",{className:"text-2xl font-bold text-gray-800 mb-4",children:"Page non trouvée"}),(0,b.jsx)("p",{className:"text-gray-600 mb-8",children:"La page que vous recherchez n'existe pas ou a été déplacée."}),(0,b.jsx)(c.default,{href:"/",className:"btn-primary",children:"Retour à l'accueil"})]})})}a.s(["default",()=>d])}];
+
+//# sourceMappingURL=Desktop_Projet%20INFA_INFA_infa-project_frontend_src_app_not-found_tsx_97a9aa5e._.js.map

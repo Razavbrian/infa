@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/cbrian/Desktop/Projet%20INFA/INFA/infa-project/frontend/src/app/not-found.tsx"],"sourcesContent":["import Link from 'next/link';\n\nexport default function NotFound() {\n  return (\n    <div className=\"min-h-screen flex items-center justify-center bg-infa-fond px-4\">\n      <div className=\"text-center max-w-md\">\n        <h1 className=\"text-6xl font-bold text-infa-vert mb-4\">404</h1>\n        <h2 className=\"text-2xl font-bold text-gray-800 mb-4\">\n          Page non trouvée\n        </h2>\n        <p className=\"text-gray-600 mb-8\">\n          La page que vous recherchez n&apos;existe pas ou a été déplacée.\n        </p>\n        <Link href=\"/\" className=\"btn-primary\">\n          Retour à l&apos;accueil\n        </Link>\n      </div>\n    </div>\n  );\n}"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,gTAAC;QAAI,WAAU;kBACb,cAAA,gTAAC;YAAI,WAAU;;8BACb,gTAAC;oBAAG,WAAU;8BAAyC;;;;;;8BACvD,gTAAC;oBAAG,WAAU;8BAAwC;;;;;;8BAGtD,gTAAC;oBAAE,WAAU;8BAAqB;;;;;;8BAGlC,gTAAC,4PAAI;oBAAC,MAAK;oBAAI,WAAU;8BAAc;;;;;;;;;;;;;;;;;AAM/C"}}]
+}

@@ -1,0 +1,3 @@
+module.exports=[33653,a=>{"use strict";var b=a.i(22898);function c(){return(0,b.jsx)("div",{className:"min-h-screen flex items-center justify-center bg-infa-fond",children:(0,b.jsxs)("div",{className:"text-center",children:[(0,b.jsx)("div",{className:"loading-spinner w-16 h-16 border-4 mx-auto mb-4"}),(0,b.jsx)("p",{className:"text-infa-vert font-medium animate-pulse",children:"Chargement en cours..."})]})})}a.s(["default",()=>c])}];
+
+//# sourceMappingURL=Desktop_Projet%20INFA_INFA_infa-project_frontend_src_app_loading_tsx_1705dcb0._.js.map

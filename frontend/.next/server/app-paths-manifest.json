@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/actualites/[slug]/page": "app/actualites/[slug]/page.js",
+  "/actualites/page": "app/actualites/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/apropos/page": "app/apropos/page.js",
+  "/calendrier-examens/page": "app/calendrier-examens/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/formations/[slug]/page": "app/formations/[slug]/page.js",
+  "/formations/page": "app/formations/page.js",
+  "/page": "app/page.js",
+  "/professionnels/partenariats/page": "app/professionnels/partenariats/page.js",
+  "/resultats-examens/page": "app/resultats-examens/page.js"
+}

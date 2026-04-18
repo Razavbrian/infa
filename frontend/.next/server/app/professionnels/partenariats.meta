@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/professionnels/layout,_N_T_/professionnels/partenariats/layout,_N_T_/professionnels/partenariats/page,_N_T_/professionnels/partenariats"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/professionnels/partenariats/__PAGE__",
+    "/professionnels/partenariats",
+    "/professionnels",
+    "/_index",
+    "/_head"
+  ]
+}

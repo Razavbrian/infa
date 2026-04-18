@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/actualites/[slug]/page": "/actualites/[slug]",
+  "/actualites/page": "/actualites",
+  "/api/contact/route": "/api/contact",
+  "/apropos/page": "/apropos",
+  "/calendrier-examens/page": "/calendrier-examens",
+  "/contact/page": "/contact",
+  "/faq/page": "/faq",
+  "/favicon.ico/route": "/favicon.ico",
+  "/formations/[slug]/page": "/formations/[slug]",
+  "/formations/page": "/formations",
+  "/page": "/",
+  "/professionnels/partenariats/page": "/professionnels/partenariats",
+  "/resultats-examens/page": "/resultats-examens"
+}

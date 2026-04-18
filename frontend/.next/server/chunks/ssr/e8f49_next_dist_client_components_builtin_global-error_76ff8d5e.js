@@ -1,0 +1,3 @@
+module.exports=[60504,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(5739);a.n(d("[project]/Desktop/Projet INFA/INFA/infa-project/frontend/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},53479,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(5739);a.n(d("[project]/Desktop/Projet INFA/INFA/infa-project/frontend/node_modules/next/dist/client/components/builtin/global-error.js"))},29075,a=>{"use strict";a.i(60504);var b=a.i(53479);a.n(b)}];
+
+//# sourceMappingURL=e8f49_next_dist_client_components_builtin_global-error_76ff8d5e.js.map

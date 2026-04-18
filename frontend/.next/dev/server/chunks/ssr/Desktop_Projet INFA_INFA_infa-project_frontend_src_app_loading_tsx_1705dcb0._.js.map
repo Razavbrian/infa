@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/cbrian/Desktop/Projet%20INFA/INFA/infa-project/frontend/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n    return (\n      <div className=\"min-h-screen flex items-center justify-center bg-infa-fond\">\n        <div className=\"text-center\">\n          <div className=\"loading-spinner w-16 h-16 border-4 mx-auto mb-4\" />\n          <p className=\"text-infa-vert font-medium animate-pulse\">\n            Chargement en cours...\n          </p>\n        </div>\n      </div>\n    );\n  }"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACE,gTAAC;QAAI,WAAU;kBACb,cAAA,gTAAC;YAAI,WAAU;;8BACb,gTAAC;oBAAI,WAAU;;;;;;8BACf,gTAAC;oBAAE,WAAU;8BAA2C;;;;;;;;;;;;;;;;;AAMhE"}}]
+}
