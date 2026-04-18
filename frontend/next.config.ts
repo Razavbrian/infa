@@ -5,9 +5,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '1337',
+        protocol: 'https',
+        hostname: 'api.infa.mg',  // ✅ Domaine de production
         pathname: '/uploads/**',
       },
       {
@@ -16,7 +15,7 @@ const nextConfig = {
         pathname: '/uploads/**',
       },
     ],
-    domains: ['localhost', 'infa.mg'],
+    domains: ['api.infa.mg', 'infa.mg'],
   },
   
   // ✅ REWRITES CORRIGÉS : Exclure les routes NextAuth et utiliser un préfixe pour Strapi

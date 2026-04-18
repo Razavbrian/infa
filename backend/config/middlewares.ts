@@ -3,8 +3,16 @@ import type { Core } from '@strapi/strapi';
 const config: Core.Config.Middlewares = [
   'strapi::logger',
   'strapi::errors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://api.infa.mg', 'https://www.api.infa.mg'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization', 'Origin'],
+      keepHeaderOnError: true,
+    },
+  },
   'strapi::security',
-  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
