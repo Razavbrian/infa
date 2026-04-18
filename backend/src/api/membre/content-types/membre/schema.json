@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "membres",
+  "info": {
+    "singularName": "membre",
+    "pluralName": "membres",
+    "displayName": "Membre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "prenom": {
+      "type": "string",
+      "required": true
+    },
+    "poste": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "biographie": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "ordre_affichage": {
+      "type": "integer",
+      "default": 0
+    },
+    "statut": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

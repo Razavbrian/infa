@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formations",
+  "info": {
+    "singularName": "formation",
+    "pluralName": "formations",
+    "displayName": "Formation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titre",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "default": "initiale",
+      "enum": [
+        "initiale",
+        "continue"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "duree": {
+      "type": "string"
+    },
+    "niveau": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "text"
+    },
+    "ordre_affichage": {
+      "type": "integer",
+      "default": 0
+    },
+    "publie": {
+      "type": "boolean",
+      "default": true
+    },
+    "icone": {
+      "type": "string"
+    }
+  }
+}

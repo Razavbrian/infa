@@ -1,0 +1,22 @@
+{
+    "name": "INFA Madagascar",
+    "short_name": "INFA",
+    "description": "Institut National de Formation Administrative",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F9F9F9",
+    "theme_color": "#007E5E",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
