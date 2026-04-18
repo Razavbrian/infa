@@ -1,0 +1,65 @@
+{
+    "kind": "collectionType",
+    "collectionName": "resultat_examens",
+    "info": {
+        "singularName": "resultat-examen",
+        "pluralName": "resultat-examens",
+        "displayName": "ResultatExamens"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "titre": {
+            "type": "string",
+            "required": true
+        },
+        "type": {
+            "type": "enumeration",
+            "required": true,
+            "enum": [
+                "initiale",
+                "continue"
+            ]
+        },
+        "session": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::calendrier-examen.calendrier-examen",
+            "inversedBy": "resultat_examen"
+        },
+        "niveau": {
+            "type": "string"
+        },
+        "semestre": {
+            "type": "enumeration",
+            "enum": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5",
+                "S6"
+            ]
+        },
+        "date_publication": {
+            "type": "datetime",
+            "required": true
+        },
+        "fichier_pdf": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "files"
+            ]
+        },
+        "publie": {
+            "type": "boolean",
+            "default": false
+        },
+        "ordre_affichage": {
+            "type": "biginteger"
+        }
+    }
+}

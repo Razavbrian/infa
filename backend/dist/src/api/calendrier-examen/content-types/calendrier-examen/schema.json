@@ -1,0 +1,56 @@
+{
+    "kind": "collectionType",
+    "collectionName": "calendrier_examens",
+    "info": {
+        "singularName": "calendrier-examen",
+        "pluralName": "calendrier-examens",
+        "displayName": "CalendrierExamens"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "titre": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "periode_debut": {
+            "type": "datetime",
+            "required": true
+        },
+        "periode_fin": {
+            "type": "datetime",
+            "required": true
+        },
+        "statut": {
+            "type": "enumeration",
+            "enum": [
+                "a_venir",
+                "en_cours",
+                "termine"
+            ]
+        },
+        "publie": {
+            "type": "boolean",
+            "default": true
+        },
+        "ordre_affichage": {
+            "type": "biginteger"
+        },
+        "examens": {
+            "type": "component",
+            "component": "examen.examens",
+            "repeatable": true
+        },
+        "resultat_examen": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::resultat-examen.resultat-examen",
+            "mappedBy": "session"
+        }
+    }
+}

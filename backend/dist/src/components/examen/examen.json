@@ -1,0 +1,40 @@
+{
+    "collectionName": "components_examen_examen",
+    "info": {
+        "displayName": "Examen"
+    },
+    "options": {},
+    "attributes": {
+        "matiere": {
+            "type": "string",
+            "required": true
+        },
+        "date_heure": {
+            "type": "datetime",
+            "required": true
+        },
+        "salle": {
+            "type": "string",
+            "required": true
+        },
+        "enseignant": {
+            "type": "string"
+        },
+        "duree_minutes": {
+            "type": "biginteger"
+        },
+        "type_epreuve": {
+            "type": "enumeration",
+            "enum": [
+                "ecrit",
+                "oral",
+                "pratique",
+                "projet"
+            ]
+        },
+        "observations": {
+            "type": "text"
+        }
+    },
+    "config": {}
+}
