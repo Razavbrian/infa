@@ -3,8 +3,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Initialiser Resend avec la clé API
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialiser Resend avec la clé API (Vérification de la clé pour éviter les erreurs au build)
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 // Type pour les données du formulaire
 interface ContactFormData {
@@ -33,6 +33,15 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
       return NextResponse.json(
         { success: false, error: 'Tous les champs sont requis' },
         { status: 400 }
+      );
+    }
+
+    // Vérifier si Resend est configuré
+    if (!resend) {
+      console.error('Resend API key is missing');
+      return NextResponse.json(
+        { success: false, error: 'Le service d\'envoi d\'emails n\'est pas configuré.' },
+        { status: 500 }
       );
     }
 
