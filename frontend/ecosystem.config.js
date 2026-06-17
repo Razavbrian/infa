@@ -1,8 +1,7 @@
 module.exports = {
     apps: [{
       name: 'infa-frontend',
-      script: 'npm',
-      args: 'start',
+      script: './.next/standalone/server.js',
       cwd: '.',
       instances: 1,
       exec_mode: 'fork',
