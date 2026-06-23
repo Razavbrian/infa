@@ -1,12 +1,17 @@
-// frontend/next.config.js
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // ✅ ACTIVATION DE L'EXPORT STATIQUE
+  // Cela génère des fichiers HTML/CSS/JS statiques dans le dossier 'out'
+  // Idéal pour économiser de la RAM sur cPanel (0 Mo de RAM utilisé pour le frontend)
+  output: 'export',
+
   images: {
+    // ✅ Désactivation de l'optimisation d'image Next.js car elle nécessite un serveur Node.js actif
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.infa.mg',  // ✅ Domaine de production
+        hostname: 'api.infa.mg',
         pathname: '/uploads/**',
       },
       {
@@ -18,19 +23,7 @@ const nextConfig = {
     domains: ['api.infa.mg', 'infa.mg'],
   },
   
-  // ✅ REWRITES CORRIGÉS : Exclure les routes NextAuth et utiliser un préfixe pour Strapi
-  async rewrites() {
-    return [
-      {
-        // ✅ Strapi API : utiliser /api/strapi/* au lieu de /api/*
-        source: '/api/strapi/:path*',
-        destination: 'http://localhost:1337/api/:path*',
-      },
-      // ✅ Les routes /api/auth-next/* (NextAuth) NE SONT PAS réécrites → restent sur Next.js
-    ];
-  },
-  
-  // Headers de sécurité
+  // Headers de sécurité (Note: certains seront gérés par le .htaccess sur cPanel en mode statique)
   async headers() {
     return [
       {

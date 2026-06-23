@@ -14,7 +14,7 @@ module.exports = {
       error_file: './logs/pm2-error.log',
       out_file: './logs/pm2-out.log',
       log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
-      max_memory_restart: '1000M',
+      max_memory_restart: '700M',
       watch: false,
       ignore_watch: ['node_modules', 'logs', '.next/cache'],
     }]
